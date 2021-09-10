@@ -248,7 +248,7 @@ async function init () {
         console.log(e)
         eraseCookie("username")
         eraseCookie("password")
-        window.location.href = "/login"
+        window.location.href = "cum-account.github.io/ProdigyDashboard/login"
     }
 }
 
@@ -262,7 +262,7 @@ async function load_defaults () {
             "Please complete tutorial before using the dashboard.",
             "error"
         )
-        window.location.href = "/login"
+        window.location.href = "cum-account.github.io/ProdigyDashboard/login.html"
         return
     }
 
@@ -441,7 +441,7 @@ async function save () {
 function logout () {
     eraseCookie("username")
     eraseCookie("password")
-    window.location.href = "/login"
+    window.location.href = "cum-account.github.io/ProdigyDashboard/login.html"
 }
 
 async function getGameData () {
@@ -645,13 +645,13 @@ if (!window.location.href.includes("login")) {
         getCookie("username") === null ||
         getCookie("password") === null
     ) {
-        window.location.href = "/login"
+        window.location.href = "cum-account.github.io/ProdigyDashboard/login.html"
     }
 } else {
     if (
         getCookie("username") !== null ||
         getCookie("password") !== null
     ) {
-        window.location.href = "/"
+        window.location.href = "cum-account.github.io/ProdigyDashboard/"
     }
 }
