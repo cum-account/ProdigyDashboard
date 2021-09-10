@@ -26,7 +26,7 @@ async function login (event) {
         submitButton.className = "fluid ui primary button"
         return popup("Login Error", "An unexpected error occurred!", "error")
     }
-    window.location.href = "/"
+    window.location.href = "cum-account.github.io/ProdigyDashboard/index.html"
 }
 
 function popup (title, desc, status) {
